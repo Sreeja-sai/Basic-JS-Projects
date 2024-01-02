@@ -1,0 +1,63 @@
+body {
+  background-color: blueviolet;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+
+}
+
+.button-list {
+  width: 70px;
+  height: 70px;
+  border-radius: 7px;
+  border: none;
+  color: blueviolet;
+  background-color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.popup.hide {
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  background-color: blueviolet;
+}
+
+#message {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+
+}
+
+#restart-button,
+#newgame-button {
+  background-color: rgb(10, 0, 39);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}

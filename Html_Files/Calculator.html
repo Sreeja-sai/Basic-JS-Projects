@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel='stylesheet' href='/Style_Files/Calculator.css'>
+</head>
+<body>
+ 
+  <p class='display-operations'></p>
+  <p>
+    <button class='grey-buttons' onclick='calculation("1");'>1</button>
+    <button class='grey-buttons' onclick='calculation("2");'>2</button>
+    <button class='grey-buttons' onclick='calculation("3");'>3</button>
+    <button class='orange-buttons' onclick='calculation("+");'>+</button>
+  </p>
+  <p>
+    <button class='grey-buttons' onclick='calculation("4");'>4</button>
+    <button class='grey-buttons' onclick='calculation("5");'>5</button>
+    <button class='grey-buttons' onclick='calculation("6");'>6</button>
+    <button class='orange-buttons' onclick='calculation("-");'>-</button>
+  </p>
+  <p>
+    <button class='grey-buttons' onclick='calculation("7");'>7</button>
+    <button class='grey-buttons' onclick='calculation("8");'>8</button>
+    <button class='grey-buttons' onclick='calculation("9");'>9</button>
+    <button class='orange-buttons' onclick='calculation("*");'>*</button>
+  </p>
+  <p>
+    <button class='grey-buttons' onclick='calculation("0");'>0</button>
+    <button class='grey-buttons' onclick='calculation(".");'>.</button>
+    <button class='grey-buttons' onclick='
+    result=eval(result);
+    displayResult(result);
+    console.log(result);
+    '>=</button>
+    <button class='orange-buttons' onclick='calculation("/");'>/</button>
+  </p>
+  <p>
+    <button class='clear-grey-button' onclick='
+      result="";
+      displayResult(result);
+      '>Clear</button>
+  </p>
+  <script src='/Script_Files/Calculator.js'>
+  </script>
+</body>
+</html>
